@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meck</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="container">
+  <header id="navtop">
+    
+		<%=link_to image_tag("logo.png",alt: "meck",), '#'%>
+                
+		<nav class="fright">
+			<ul>
+				<li class="navactive"><%=link_to "Home", '#'%></li>
+				<li><%=link_to "About", '#' %></li>
+			</ul>
+			<ul>
+				<li><%= link_to "Works", '#'%></li>
+				<li><%= link_to "Services", '#'%></li>
+			</ul>
+			<ul>
+				<li><%= link_to"Blog", '#'%></li>
+				<li><%= link_to "Contact", '#'%></li>
+			</ul>
+		</nav>
+    
+	</header>
+  </div>
+  <div class="container">
+           
+           <%= yield %>
+  </div>
+</body>
+</html>
