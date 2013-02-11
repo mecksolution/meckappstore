@@ -1,2 +1,52 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<div class="about-page main grid-wrap">
+
+		<header class="grid col-full">
+		<hr>
+			<p class="fleft">About</p>
+		</header>
+
+		
+		
+		<aside class="grid col-one-quarter mq2-col-full">
+			<p class="mbottom">.
+			</p>
+			<menu>
+				<ul>
+					<li><%=link_to "Our team", '#navteam', class:"arrow"%></li>
+					<li><%= link_to "Our philosopy", '#navphilo', class:"arrow"%></li>
+					<li><%=link_to "Our place", '#navplace', class:"arrow"%></li>
+					<li><%=link_to "Our products", '#navothers', class:"arrow"%></li>
+				</ul>
+			</menu>
+		</aside>
+		
+		<section class="grid col-three-quarters mq2-col-full">
+			<%= image_tag "team.jpg", alt:"" %>
+			
+			<article id="navteam">
+			<h2>Our team</h2>
+			<p>Lng .</p>
+			<p>Lor.</p>
+			</article>
+			
+			<article id="navphilo">
+			<h2>Our philosophy</h2>
+			<p>. Su</p>
+			<p>Lo.</p>
+			</article>
+			
+			<article id="navplace">
+			<h2>Our place</h2>
+			<p>L</p>
+			<p>Lo.</p>
+			</article>
+					
+			<article id="navother">
+			<h2>Our location</h2>
+			<p>Lt.</p>
+			<p>Lhit.</p>
+			</article>
+		
+		</section>
+		
+	</div>
