@@ -7,6 +7,7 @@ gem 'rails', '3.2.9'
 
 gem 'pg'
 gem 'jquery-rails', '2.0.2'
+gem 'activeadmin'
 
 
 
