@@ -1,0 +1,12 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>File url:</b>
+  <%= link_to "#{@upload.attach.url}", :action => 'verify', :id => @upload.id %>
+</p>
+
+
+
+
+
+<%= link_to 'Back', uploads_path %>

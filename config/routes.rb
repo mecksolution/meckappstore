@@ -1,9 +1,16 @@
 Meck::Application.routes.draw do
+  get "upload/index"
+
+  get "upload/new"
+  resources :uploads
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root to: 'pages#home'
+  
+  match '/new_upload', to: 'upload#new'
 
   match '/contact', to: 'pages#contact'
 
