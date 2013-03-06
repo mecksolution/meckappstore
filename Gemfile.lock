@@ -239,7 +239,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
-  bootstrap-sass (= 2.1)
+  bootstrap-sass
   capybara
   capybara-mechanize!
   coffee-rails (~> 3.2.1)
